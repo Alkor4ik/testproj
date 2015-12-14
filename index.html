@@ -9,13 +9,13 @@
 <ul class="accordion_line">
 	<li>
 
-	<section id="oneaccordion_1">
-		<a href="#oneaccordion_1">Точка 1</a>
+	<section id="oneaccordion_1" >
+		<a href="#oneaccordion_1" onclick="logon_form_create()">Точка 1</a>
 		<ul>
-			<form class="logon_form" id="logon_form" action="">
-				<p><input type="text"></p>
-				<p><input type="text"></p>
-				<p><input type="submit"></p>
+			<form name="logon" id="logon_form">
+				<p>Login <input type="text" name="login"></p>
+				<p>Password <input type="text" name="password"></p>
+				<p><input type="submit" name="login_send" value="Login"></p>
 			</form>
 			<li><p>text texttexttexttexttex ttexttexttext texttexttexttext texttexttexttexttexttexttext texttexttex    </p></li>
 			<li><p>text texttexttextte xttexttexttex ttexttext texttexttext texttexttexttexttexttexttext texttext texttexttexttexttext</p></li>
@@ -23,7 +23,7 @@
 		</ul>
 	</section>
 	<section id="oneaccordion_2">
-		<a href="#oneaccordion_2">Точка 2</a>
+		<a href="#oneaccordion_2" >Точка 2</a>
 		<ul>
 			<li><p>text texttexttexttexttexttex ttexttexttex ttexttexttext texttexttexttexttexttexttext texttexttexttexttexttexttext</p></li>
 			<li><p>text texttexttexttexttextt exttextte xttexttexttexttext texttexttexttexttexttexttext texttexttexttexttexttexttext</p></li>
@@ -121,6 +121,6 @@
 	</main> -->
 	
 </ul>
-	
+<script src="script.js"></script>	
 	
 </body>
