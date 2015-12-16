@@ -23,14 +23,6 @@ ul.accordion_line li section ul{
 	text-decoration: none;
 }
 
-ul.accordion_line li section:target ul {
-	display: block;
-	
-	padding-right: 7px;
-
-}
-
-
 
 
 ul.accordion_line>li{
