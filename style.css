@@ -1,36 +1,7 @@
 /*что-то поменяем*/
 body {
-	background-color: 92A2A6;
+	background-color: #92A2A6;
 }
-
-/*#accordion section{
-	text-align: left;
-	background-color: F0ECDD;
-	padding: 1px;
-	width: 30%;
-	margin-left: 10px;
-}
-
-#accordion section ul {
-	display: none;
-
-}
-#accordion section a {
-	text-align: none;
-	color: C7987B;
-	text-decoration: none;
-	text-align: center;
-
-
-}
-#accordion section a:hover {
-	color: E0C69F;
-	}
-
-#accordion section:target ul {
-	display: block;
-
-}*/
 
 
 ul.accordion_line{
@@ -48,7 +19,7 @@ ul.accordion_line li section ul{
 .accordion_line a {
 	margin: 10px;
 	text-align: center;
-	color: C7987B;
+	color: #C7987B;
 	text-decoration: none;
 }
 
@@ -74,9 +45,6 @@ ul.accordion_line>li{
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
     width: 300px;
     vertical-align: top;
-
-	
-
 }
 
 
