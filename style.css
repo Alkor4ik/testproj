@@ -31,6 +31,8 @@ ul.accordion_line>li {
   width: 300px;
   vertical-align: top;
 }
+
+/*   ---------------- Контекстное окно -----------------*/
 #modal_form {
 	width: 300px; 
 	height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */
@@ -72,6 +74,3 @@ ul.accordion_line>li {
 	cursor:pointer;
 	display:none; /* в oбычнoм сoстoянии её нет) */
 }
-/* #logon_form{
-	display: none;
-} */
