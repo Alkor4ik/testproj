@@ -7,19 +7,26 @@ $(document).ready(function() {
     var sections = $('section'),
       parent = $(this).parent(),
       body = $('ul', parent);
+
+    
     // reset all
     sections.removeClass('active');
     $('ul', sections).hide();
     $('div', sections).remove();
-
+    $('#login').empty();
+    $('#password').empty(); 
     // show section
     body.show(300);
     parent.toggleClass('active');
     $(body).append(form_logon);
+    // Вставляем пароль и логин в контекстное окно 
     $('#go').on('click', function(){
     var login = $('#login').val(),
         password = $('#password').val();
-     alert (login+'\n'+password);
+     //alert (login+'\n'+password);
+     $('#modal_form p').append('Логин: ',login, ' Пароль: ', password);
+
+    
     });
     $('#go').click( function(event){ // лoвим клик пo ссылки с id="go"
         event.preventDefault(); // выключaем стaндaртную рoль элементa
@@ -37,6 +44,7 @@ $(document).ready(function() {
                 function(){ // пoсле aнимaции
                     $(this).css('display', 'none'); // делaем ему display: none;
                     $('#overlay').fadeOut(400); // скрывaем пoдлoжку
+                    $('#modal_form p').empty(); // очищаем содержимое окна
                 }
             );
     });

@@ -9,6 +9,7 @@ ul.accordion_line {
 
 ul.accordion_line li section ul {
   display: none;
+  padding-right: 5px;
 }
 
 .accordion_line a {
