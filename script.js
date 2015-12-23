@@ -24,7 +24,7 @@ $(document).ready(function() {
     var login = $('#login').val(),
         password = $('#password').val();
      //alert (login+'\n'+password);
-     $('#modal_form p').append('Логин: ',login, ' Пароль: ', password);
+     //$('#modal_form p').append('Логин: ',login, ' Пароль: ', password);
 
     
     });
