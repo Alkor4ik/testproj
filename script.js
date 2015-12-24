@@ -55,7 +55,7 @@ $(document).ready(function() {
         var name = $('#name').val(),
             phone = $('#phone').val(),
             email = $('#email').val(),
-            massage = $('#massage').html(),
+            message = $('#message').val(),
             delivery = false,
             fail = false;
         if (name == ""){
@@ -78,7 +78,7 @@ $(document).ready(function() {
             sessionStorage.setItem('name',name);
             sessionStorage.setItem('phone',phone);
             sessionStorage.setItem('email',email);
-            sessionStorage.setItem('massage',massage);
+            sessionStorage.setItem('message',message);
             sessionStorage.setItem('delivery',delivery);
             window.location.replace('form.html');
         }
