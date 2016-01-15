@@ -3,28 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<script type="text/javascript" src='../jquery-2.1.4.min.js'></script>
-  <script src="main.js"></script>
+	<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-
+    <center>
 	<div>
-    <form action="" id="reg_form">
-    <label for="name">Имя</label>
-    <input type="text" name="name" id="name"><br><br>
-    <label for="phone">Телефон</label>
-    <input type="text" name="phone" id="phone"><br><br>
-    <label for="email">email</label>
-    <input type="text" name="email" id="email"><br><br>
-    <p>Введите сообщение</p>
-    <textarea name="message" id="message" cols="30" rows="10" id="massage"></textarea><br><br>
-    <label for="delivery">Подписаться на рассылку</label>
-    <input type="checkbox" name="delivery" id="delivery"><br><br>
-    <label for="trust">Доверяю рессурсу</label>
-    <input type="checkbox" name="trust" id="trust"><br><br>
-    <input type="button" id="reg_submit" value="Отправить">
+    <form action="check.php" id="reg_form" method="post">
+    <!-- <label for="name">Имя</label> -->
+    <input type="text" name="name" id="name" placeholder="Введите имя"><br><br>
+    <!-- <label for="phone">Телефон</label> -->
+    <input type="text" name="phone" id="phone" placeholder="Введите телефон"><br><br>
+    <!-- <label for="email">email</label> -->
+    <input type="text" name="email" id="email" placeholder="Введите почту"><br><br>
+    <!-- <p>Введите доплнительную информацию</p> -->
+    <textarea name="message" id="message" cols="30" rows="10" id="massage" placeholder="Введите сообщение"></textarea><br><br>
+    <input class="button" type="submit" id="reg_submit" value="Отправить">
     </form>
-  </div>
+    </div>
+    </center>
 </body>
 </html>
