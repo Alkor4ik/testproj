@@ -32,22 +32,29 @@ def parse_schools(URL, base):
         address = address.find_next('ul', class_='col-sm-6 list-unstyled')
         address = address.li.text.strip()
         schools.append({
-            'url': school_url
+            'url': school_url,
             'scholl_name': i.a.text,
             'location': address,
             })
     return schools
     #({'scholl_name': i.a.text, 'location': 'Moscow', 'url': str(base + i.a.get('href'))} for i in articles)
 
-def parser_all_school(URL, base):
+def parse_all_school(URL, base):
     html = get_html(URL)
     soup = BeautifulSoup(html, "html.parser")
     pagination = soup.find('div', class_='paginator mt-section')
     pagination = int(pagination.find_all('a')[-1].text)
+    all_schools = []
+    print ('Всего страниц со школами ' + str(pagination))
+    file = open("parser.txt", 'a')
     for i in range(0,pagination*30,30):
-         URL_page = str(URL+'?s='+str(i))
-         schools = parse_schools(URL_page, base)
-         print(schools)
+        URL_page = str(URL+'?s='+str(i))
+        print('Сейчас парсим '+ URL_page+' страницу')
+        schools = parse_schools(URL_page, base)
+        file.write(str(schools))
+        all_schools = all_schools + schools
+    file.close()
+    return all_schools
     
 
 
@@ -58,7 +65,8 @@ def main():
 
     #text = get_html(URL)
     #schools = parse_schools(URL, base)
-    parser_all_school(URL, base)
+    all_school = parse_all_school(URL, base)
+
     
     # any(print(s) for s in schools)
     #for i in schools:
